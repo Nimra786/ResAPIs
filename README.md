@@ -17,25 +17,20 @@ This project is a Cypress-based end-to-end (E2E) testing framework designed for 
 To get started, make sure you have the following installed on your machine:
 
 - **Node.js** (v16 or higher recommended)
-- **npm** or **yarn**
+- **npm**
 
 Then, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd <repository-folder>
+   git clone https://github.com/Nimra786/ResAPIs.git
+   cd ResAPIs
    ```
 
 2. Install the project dependencies:
    ```bash
    npm install
    ```
-   or, if you're using Yarn:
-   ```bash
-   yarn install
-   ```
-
 ---
 
 ## Setup
@@ -47,9 +42,12 @@ Before running the tests, ensure that:
    - Example:
      ```javascript
      module.exports = {
-       e2e: {
-         baseUrl: 'https://your-api-url.com',
-       },
+         e2e: {
+            supportFile: false,
+            baseUrl: 'https://reqres.in',
+            setupNodeEvents(on, config) {
+            },
+         },
      };
      ```
 
@@ -76,7 +74,7 @@ To open the interactive test runner:
 npx cypress open
 ```
 
-### Run Specific Test Files
+### Run Specific Test Files in Headless Mode
 To run a specific test file, use the following command:
 ```bash
 npx cypress run --spec "cypress/e2e/specs/users/<test-file-name>.cy.js"
@@ -94,8 +92,8 @@ npx cypress run --spec "cypress/e2e/specs/users/userCreationSpec.cy.js"
 The project is organized as follows:
 
 ### 1. **e2e Folder**
-   - **data**: Contains JavaScript files for API endpoints, authentication, and test-specific data (e.g., user creation, deletion, etc.).
-   - **specs**: Holds test cases grouped by feature (e.g., user creation, update, delete).
+   - **data**: Contains Test files for API endpoints
+   - **specs**: Contain TestCases for each endpoint
    - **fixtures**: Stores reusable JSON files for baseline comparison and API payloads.
      - `baseline`: Expected responses for validation.
      - `payload`: Input payloads for API testing.
@@ -109,4 +107,4 @@ For a test case such as **User Creation**:
 1. The API endpoint is defined in `apiEndPoints.js`.
 2. Test data is stored in `userCreationData.js` and `userCreationPayload.json`.
 3. The test spec is written in `userCreationSpec.cy.js`.
-4. Expected output for validation is in `userCreationBaseline.json`.
+4. Expected output for JSON validation is in `userCreationBaseline.json`.
