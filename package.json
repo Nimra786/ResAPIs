@@ -1,0 +1,24 @@
+{
+  "name": "resapis",
+  "version": "1.0.0",
+  "description": "This project is a Cypress-based end-to-end (E2E) testing framework designed for API testing and frontend interaction. The folder structure, data organization, and configuration are all tailored to streamline the testing process.",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nimra786/ResAPIs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Nimra786/ResAPIs/issues"
+  },
+  "homepage": "https://github.com/Nimra786/ResAPIs#readme",
+  "devDependencies": {
+    "mochawesome": "^7.1.3"
+  }
+}

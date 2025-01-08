@@ -6,5 +6,12 @@ module.exports = defineConfig({
     baseUrl: 'https://reqres.in',
     setupNodeEvents(on, config) {
     },
+    reporter: 'mochawesome',
+    reporterOptions: {
+      reportDir: 'cypress/reports', // Specify the report directory
+      overwrite: false,
+      html: false,
+      json: true,
+    },
   },
 });

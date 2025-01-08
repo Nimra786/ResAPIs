@@ -87,6 +87,30 @@ npx cypress run --spec "cypress/e2e/specs/users/userCreationSpec.cy.js"
 
 ---
 
+## Reporter Configuration
+
+- The project is configured to use the **Mochawesome** reporter for Cypress test runs.
+- Reports are generated in JSON format and saved in the following directory:
+  ```
+  cypress/reports/
+  ```
+  Example: `cypress/reports/mochawesome_001.json`
+
+---
+
+## Running Tests and Generating Reports
+
+To execute all test specs and generate a report:
+
+1. Run the following command:
+   ```bash
+   npx cypress run
+   ```
+
+2. After the tests are completed, the Mochawesome report files will be saved in the `cypress/reports/` directory.
+
+---
+
 ## Code Structure
 
 The project is organized as follows:
