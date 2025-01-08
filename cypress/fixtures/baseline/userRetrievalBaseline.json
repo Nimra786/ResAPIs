@@ -1,0 +1,22 @@
+{
+  "status": 200,
+  "responseStructure": {
+    "page": 2,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+      {
+        "id": "number",
+        "email": "string",
+        "first_name": "string",
+        "last_name": "string",
+        "avatar": "string"
+      }
+    ],
+    "support": {
+      "url": "string",
+      "text": "string"
+    }
+  }
+}

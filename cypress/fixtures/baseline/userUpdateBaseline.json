@@ -1,0 +1,9 @@
+{
+    "status": 200,
+    "responseStructure": {
+      "name": "string",
+      "job": "string",
+      "updatedAt": "string"
+    }
+}
+  

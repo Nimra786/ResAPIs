@@ -1,0 +1,10 @@
+{
+    "status": 201,
+    "responseStructure": {
+      "id": "string",
+      "name": "string",
+      "job": "string",
+      "createdAt": "string"
+    }
+  }
+  
