@@ -8,7 +8,6 @@ This project is a Cypress-based end-to-end (E2E) testing framework designed for 
 - [Setup](#setup)
 - [Running Tests](#running-tests)
 - [Code Structure](#code-structure)
-- [Contributing](#contributing)
 
 ---
 
